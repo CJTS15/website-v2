@@ -2,26 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    @apply bg-[#ecf0f3] text-zinc-900 tracking-wide
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .bg-dark {
+    @apply bg-[#27374D]
+  }
+
+  .h-dark-light {
+    @apply bg-[#DDE6ED]
+  }
+
+  .p-dark-light {
+    @apply bg-[#9DB2BF]
+  }
+
+  .logo {
+    @apply text-4xl text-zinc-900
+  }
+
+  p {
+    @apply text-gray-800
+  }
+
+  span {
+    @apply text-blue-500
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-zinc-950
+  }
+  
+  h1 {
+    @apply text-6xl sm:text-5xl lg:text-7xl
+  }
+
+  h2 {
+    @apply text-5xl sm:text-4xl lg:text-6xl
+  }
+
+  li {
+    @apply cursor-pointer text-zinc-900
+  }
+
+  .btn-primary {
+    @apply shadow-md shadow-gray-300 rounded-full px-6 py-2
+    bg-gradient-to-r from-blue-500 to-cyan-500 text-white
+    hover:bg-gradient-to-l from-cyan-500 to-blue-500 hover:scale-105 ease-in duration-100
+  }
+
+  .btn-secondary {
+    @apply shadow-md shadow-gray-300 rounded-full px-6 py-2
+    bg-gradient-to-l from-blue-500 to-cyan-500 text-white
+    hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:scale-105 ease-in duration-100
+  }
+
+  .btn-tertiary {
+    @apply rounded-full px-6 py-2
+    bg-white text-blue-500 font-bold
+    hover:scale-105 ease-in duration-100
+  }
+
+  .icon-hover {
+    @apply hover:scale-110 ease-in duration-100
+  }
+
+  .skill-card{
+    @apply hover:bg-slate-200 ease-in duration-200 p-8 rounded-md
+  }
+
+  .nav-menu .active {
+    @apply pb-2 border-b-2 border-blue-500;
+  }
+
+  .nav-menu .active a {
+    @apply pb-2 border-b-2 border-blue-500;
+  }
+
+  .nav-item {
+    @apply hover:border-b-2 border-blue-500 pb-2;
+  }
+  
 }
