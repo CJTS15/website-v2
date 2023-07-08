@@ -52,8 +52,8 @@ const More = () => {
                         Given the opportunity, I have a deep desire to travel and explore different places, as it offers a
                         sense of excitement and adventure.</motion.p>
                     <div className="flex justify-center md:justify-start gap-6 my-8">
-                        <Link href="/linktree"><motion.button animate={fadeRight} type="button" class="btn-primary dark:shadow-shadow-dark">Connect With Me</motion.button></Link>
-                        <Link href="/projects"><motion.button animate={fadeLeft} type="button" class="btn-secondary dark:shadow-shadow-dark">See My Other Works</motion.button></Link>
+                        <Link href="/linktree"><motion.button animate={fadeRight} type="button" className="btn-primary dark:shadow-shadow-dark">Connect With Me</motion.button></Link>
+                        <Link href="/projects"><motion.button animate={fadeLeft} type="button" className="btn-secondary dark:shadow-shadow-dark">See My Other Works</motion.button></Link>
                     </div>
                 </div>
                 <div className="w-full h-auto m-auto my-4">

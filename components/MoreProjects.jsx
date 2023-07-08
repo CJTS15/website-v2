@@ -138,9 +138,9 @@ const MoreProjects = () => {
               projectUrl="https://ushealthcarecareersphilippines.com/"
             />
           </motion.div>
-          <div class="flex justify-center gap-6 my-8">
+          <div className="flex justify-center gap-6 my-8">
             <a href="https://www.linkedin.com/in/cjsabijon/">
-              <button type="button" class="btn-primary flex items-center justify-between dark:shadow-shadow-dark">Work With Me <i className="ml-2"><FaPaperPlane /></i></button></a>
+              <button type="button" className="btn-primary flex items-center justify-between dark:shadow-shadow-dark">Work With Me <i className="ml-2"><FaPaperPlane /></i></button></a>
           </div>
 
         </div>

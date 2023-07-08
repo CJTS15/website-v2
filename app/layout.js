@@ -1,19 +1,23 @@
 'use client'
 import './globals.css'
-import { Inter } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 
-const inter = Inter({ subsets: ['latin'] })
+export const metadata = {
+  title: "Hi, I'm CJ | Your Friendly Neighborhood Tech Support",
+  description: 'Your Friendly Neighborhood Tech Support',
+}
 
 export default function RootLayout({ children }) {
   const router = useRouter();
+  
   return (
+
     <AnimatePresence>
       <html lang="en">
-        <motion.body suppressHydrationWarning className={inter.className}
+        <motion.body suppressHydrationWarning
           key={router}
           initial="initialState"
           animate="animateState"

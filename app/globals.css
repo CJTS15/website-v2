@@ -86,7 +86,7 @@
   }
 
   .nav-item {
-    @apply hover:border-b-2 border-blue-500 pb-2;
+    @apply hover:border-b-2 border-blue-500 py-2;
   }
   
 }
