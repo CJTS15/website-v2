@@ -2,7 +2,7 @@
 
 This is my website hosted on Github Pages. I am currently adding some updates and projects to this website.
 
-This is my homepage - <a href="https://website-v2-theta-nine.vercel.app" target="blank">Hello! I'm CJ</a>.
+This is my homepage - <a href="https://cjsabijon.vercel.app/" target="blank">Hello! I'm CJ</a>.
 
 ### Here are my projects so far.
 1. LinkTree Alternative (Links) - <a href="https://website-v2-theta-nine.vercel.app/links" target="blank">Links</a>
