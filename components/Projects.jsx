@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import amzpectyImg from '../public/img/works/amzpecty-thumbnail.webp'
 import autobacsjpImg from '../public/img/works/autobacs-jp-thumbnail.webp'
 import autobacstplImg from '../public/img/works/autobacs-tpl-thumbnail.webp'
@@ -17,23 +18,14 @@ const Projects = () => {
 
   const fadeDown = useAnimation();
   const fadeUp = useAnimation();
-  const fadeUp1 = useAnimation();
-  const fadeRight = useAnimation();
-  const fadeLeft = useAnimation();
 
   useEffect(() => {
     if (isInView) {
       fadeDown.start({ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.25 } })
       fadeUp.start({ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.25 } })
-      fadeUp1.start({ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.25 } })
-      fadeRight.start({ opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.25 } })
-      fadeLeft.start({ opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.25 } })
     } else {
-      fadeDown.set({ opacity: 0, y: -25 })
-      fadeUp.set({ opacity: 0, y: 45 })
-      fadeUp1.set({ opacity: 0, y: 25 })
-      fadeRight.set({ opacity: 0, x: -25 })
-      fadeLeft.set({ opacity: 0, x: 25 })
+      fadeDown.set({ opacity: 0, y: -55 })
+      fadeUp.set({ opacity: 0, y: 75 })
     }
   }, [isInView])
 
@@ -89,8 +81,10 @@ const Projects = () => {
           />
         </motion.div>
 
-        <div class="flex justify-center gap-6 my-8">
-          <a href="/projects"><motion.button animate={fadeUp} type="button" class="btn-primary dark:shadow-shadow-dark">See More Works</motion.button></a>
+        <div className="flex justify-center gap-6 my-8">
+          <Link href="/projects">
+            <motion.button animate={fadeUp} type="button" className="btn-primary dark:shadow-shadow-dark">See More Works</motion.button>
+          </Link>
         </div>
 
       </div>

@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply bg-[#ecf0f3] text-zinc-900 tracking-wide
   }

@@ -24,11 +24,11 @@ const Main = () => {
             fadeRight.start({ opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.25 } })
             fadeLeft.start({ opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.25 } })
         } else {
-            fadeDown.set({ opacity: 0, y: -25 })
-            fadeUp.set({ opacity: 0, y: 45 })
-            fadeUp1.set({ opacity: 0, y: 25 })
-            fadeRight.set({ opacity: 0, x: -25 })
-            fadeLeft.set({ opacity: 0, x: 25 })
+            fadeDown.set({ opacity: 0, y: -55 })
+            fadeUp.set({ opacity: 0, y: 75 })
+            fadeUp1.set({ opacity: 0, y: 55 })
+            fadeRight.set({ opacity: 0, x: -55 })
+            fadeLeft.set({ opacity: 0, x: 55 })
         }
     }, [isInView])
 

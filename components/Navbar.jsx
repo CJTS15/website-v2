@@ -1,8 +1,8 @@
 'use client'
 import { Link } from 'react-scroll'
-import React, {useState, useEffect} from 'react'
-import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
-import {FaGlobe, FaLinkedin, FaWordpress, FaGithub} from 'react-icons/fa'
+import React, { useState, useEffect } from 'react'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { FaGlobe, FaLinkedin, FaWordpress, FaGithub } from 'react-icons/fa'
 
 import ThemeSwitcher from './ThemeSwitcher'
 
@@ -36,27 +36,23 @@ const navbar = () => {
                 <div>
                     <ul className="hidden md:flex items-center nav-menu active ">
                         <li className="ml-10 text-sm uppercase nav-item dark:text-p-dark-light">
-                        <Link
-                            to="about"
+                        <Link to="about"
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={50}
-                            >
+                            duration={50}>
                             About Me</Link></li>
                         <li className="ml-10 text-sm uppercase nav-item dark:text-p-dark-light">
-                        <Link
-                            to="works"
+                        <Link to="works"
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={50}
-                            >
+                            duration={50}>
                             Works</Link></li>
                         <li className="ml-10 text-sm uppercase nav-item dark:text-p-dark-light">
-                            <Link href="https://www.linkedin.com/in/cjsabijon/">Connect</Link></li>
+                            <a href="https://www.linkedin.com/in/cjsabijon/">Connect</a></li>
                         <li className="ml-10 text-sm uppercase nav-item dark:text-p-dark-light">
-                            <Link href="/">Links</Link></li>
+                            <a href="/linktree">Links</a></li>
                         <div className="ml-6">
                             <ThemeSwitcher />
                         </div>
@@ -79,7 +75,9 @@ const navbar = () => {
                     ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-bg-dark p-8 ease-in duration-500' 
                     : 'fixed left-[-100%] top-0 h-screen bg-[#ecf0f3] dark:bg-bg-dark p8 ease-in duration-500'}>  
                         <div className="flex w-full items-center justify-between">
-                            <h2 className="border-l-4 border-blue-500 px-2 dark:text-h-dark-light">CJ</h2>
+                            <a href="/">
+                                <h2 className="logo flex border-l-4 border-blue-500 px-2 dark:text-h-dark-light">CJ👋</h2>
+                            </a>
                             <div onClick={handleNav} className="rounded-full shadow-md shadow-gray-300 dark:shadow-shadow-dark cursor-pointer p-3 dark:text-p-dark-light">
                                 <AiOutlineClose size={15} />
                             </div>
@@ -89,28 +87,24 @@ const navbar = () => {
                         </div>
                         <div className="py-4 flex flex-col ">
                             <ul className="uppercase">
-                                <Link
-                                to="about"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={50}
-                                >
+                                <Link to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={50}>
                                     <li className="py-4 text-sm dark:text-p-dark-light" onClick={handleNav}>About Me</li>
                                 </Link>
-                                <Link
-                                to="works"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={50}
-                                >
+                                <Link to="works"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={50}>
                                     <li className="py-4 text-sm dark:text-p-dark-light" onClick={handleNav}>Works</li>
                                 </Link>
                                 <a href="https://www.linkedin.com/in/cjsabijon/">
                                     <li className="py-4 text-sm dark:text-p-dark-light" onClick={handleNav}>Connect</li>
                                 </a>
-                                <a href="/">
+                                <a href="/linktree">
                                     <li className="py-4 text-sm dark:text-p-dark-light" onClick={handleNav}>Links</li>
                                 </a>
                             </ul>

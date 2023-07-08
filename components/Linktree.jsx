@@ -1,4 +1,3 @@
-'use client'
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { motion, useInView, useAnimation, AnimatePresence } from 'framer-motion'
@@ -17,8 +16,8 @@ const LinkTree = () => {
             fadeDown.start({ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.25 } })
             fadeUp.start({ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.25 } })
         } else {
-            fadeDown.set({ opacity: 0, y: -25 })
-            fadeUp.set({ opacity: 0, y: 45 })
+            fadeDown.set({ opacity: 0, y: -55 })
+            fadeUp.set({ opacity: 0, y: 75 })
         }
     }, [isInView])
 
@@ -41,7 +40,7 @@ const LinkTree = () => {
                         <div className="">
                             <div className="text-center px-12">
                                 <h2 className="text-3xl font-bold">CJ Sabijon</h2>
-                                <a className="text-gray-400 mt-2 hover:text-blue-500" href="https://cjts15.github.io/" target="BLANK()">@cj_wolfy15</a>
+                                <a href="https://cjts15.github.io/" className="text-gray-400 mt-2 hover:text-blue-500" >@cj_wolfy15</a>
                                 <p className="mt-2 text-gray-600 text-sm">♒ | Tech | Gamer | Developer | 💻 Support | 👨🏻‍💻 GDG | 👨🏻‍💻 DEVCON</p>
                             </div>              
                         </div>

@@ -1,3 +1,4 @@
+'use client'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
@@ -7,37 +8,32 @@ import { useRouter } from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: "Hi, I'm CJ | Your Friendly Neighborhood Tech Support",
-  description: 'Your Friendly Neighborhood Tech Support',
-}
-
 export default function RootLayout({ children }) {
   const router = useRouter();
   return (
     <AnimatePresence>
-      <motion.html lang="en" suppressHydrationWarning
-        key={router}
-        initial="initialState"
-        animate="animateState"
-        transition={{ duration: 0.2, delay: 0.25 }}
-        exit="exitState"
-        variants={{
-          initialState: {
-            opacity: 0
-          },
-          animateState: {
-            opacity: 1
-          },
-          exitState: {
-          }
-        }}>
-        <body className={inter.className}>
+      <html lang="en">
+        <motion.body suppressHydrationWarning className={inter.className}
+          key={router}
+          initial="initialState"
+          animate="animateState"
+          transition={{ duration: .25, delay: 0.15 }}
+          exit="exitState"
+          variants={{
+            initialState: {
+              opacity: 0, clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
+            },
+            animateState: {
+              opacity: 1, clipPath: "polygon(100% 0, 0 0, 0 100%, 100% 100%)",
+            },
+            exitState: {
+            }
+          }}>
           <ThemeProvider enableSystem={true} attribute="class">
             {children}
           </ThemeProvider>
-        </body>
-      </motion.html>
+        </motion.body>
+      </html>
     </AnimatePresence>
   )
 }

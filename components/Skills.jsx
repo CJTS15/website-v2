@@ -17,8 +17,8 @@ useEffect(() => {
         fadeDown.start({opacity: 1, y: 0, transition:{ duration: 0.5, delay: 0.25 }})   
         fadeUp.start({opacity: 1, y: 0, transition:{ duration: 0.5, delay: 0.25 }})
     }else {
-        fadeDown.set({opacity: 0, y: -25})
-        fadeUp.set({opacity: 0, y: 45}) 
+        fadeDown.set({opacity: 0, y: -55})
+        fadeUp.set({opacity: 0, y: 75}) 
         }
 },[isInView])
   return (
