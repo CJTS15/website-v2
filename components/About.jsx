@@ -2,6 +2,8 @@
 import { Link, animateScroll as scroll } from 'react-scroll'
 import Image from 'next/image'
 
+import aboutImg from '../public/img/gdg-prof-pic.webp'
+
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation, AnimatePresence } from 'framer-motion'
 
@@ -65,7 +67,7 @@ const About = () => {
                         </div>
                     </div>
                     <motion.div animate={fadeLeft} className="w-full h-auto m-auto my-4">
-                        <Image src='/../public/img/gdg-prof-pic.webp' width='768' height='1024' alt="" priority={false} className="rounded-md" />
+                        <Image src={aboutImg} width='768' height='1024' alt="" priority={false} className="rounded-md" />
                     </motion.div>
                 </div>
             </div>

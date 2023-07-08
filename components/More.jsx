@@ -2,6 +2,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+import workImg from '../public/img/work.webp'
+
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation, AnimatePresence } from 'framer-motion'
 
@@ -57,7 +59,7 @@ const More = () => {
                     </div>
                 </div>
                 <div className="w-full h-auto m-auto my-4">
-                    <Image src='/../public/img/work.webp' width='768' height='1024' alt="" className="rounded-md" />
+                    <Image src={workImg} width='768' height='1024' alt="" className="rounded-md" />
                 </div>
             </div>
         </div>
