@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes'
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/navigation'
+import { Analytics } from '@vercel/analytics'
 
 export default function RootLayout({ children }) {
   const router = useRouter();
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           animate={fade}>
           <ThemeProvider enableSystem={true} attribute="class">
             {children}
+            <Analytics />
           </ThemeProvider>
         </motion.body>
       </html>
