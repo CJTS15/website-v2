@@ -5,11 +5,6 @@ import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 
-export const metadata = {
-  title: "Hi, I'm CJ | Your Friendly Neighborhood Tech Support",
-  description: 'Your Friendly Neighborhood Tech Support',
-}
-
 export default function RootLayout({ children }) {
   const router = useRouter();
   const ref = useRef(null);
