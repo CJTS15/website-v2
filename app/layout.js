@@ -1,8 +1,8 @@
 'use client'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
-import React from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import React, { useEffect, useRef } from 'react'
+import { motion, useInView, useAnimation, AnimatePresence } from 'framer-motion'
 import { useRouter } from 'next/navigation'
 
 export const metadata = {
@@ -12,27 +12,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const router = useRouter();
-  
+  const ref = useRef(null);
+
+  const isInView = useInView(ref, { once: false });
+  const fade = useAnimation();
+
+  useEffect(() => {
+      fade.set({ opacity: 0})
+      fade.start({ opacity: 1}) 
+  }, [isInView])
+
   return (
 
     <AnimatePresence>
-      <html lang="en">
+      <html lang="en" ref={ref}>
         <motion.body suppressHydrationWarning
-          key={router}
-          initial="initialState"
-          animate="animateState"
-          transition={{ duration: .25, delay: 0.15 }}
-          exit="exitState"
-          variants={{
-            initialState: {
-              opacity: 0, clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
-            },
-            animateState: {
-              opacity: 1, clipPath: "polygon(100% 0, 0 0, 0 100%, 100% 100%)",
-            },
-            exitState: {
-            }
-          }}>
+          key={router} 
+          animate={fade}>
           <ThemeProvider enableSystem={true} attribute="class">
             {children}
           </ThemeProvider>
