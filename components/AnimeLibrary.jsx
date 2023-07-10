@@ -58,12 +58,12 @@ const AnimeLibrary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center">
                     <Suspense fallback={<h2>Loading results...</h2>}>
                         <AnimeItems animeInfo = {animeList} />
                     </Suspense>
-                    <a href="#" className="flex justify-center mt-6"><button type="button" 
-                    className="btn-secondary dark:shadow-shadow-dark">Load More</button></a>
+                    {/* <a href="#" className="flex justify-center mt-6"><button type="button" 
+                    className="btn-secondary dark:shadow-shadow-dark">Load More</button></a> */}
                 </div>
             </div>
         </div>
