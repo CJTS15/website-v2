@@ -26,7 +26,7 @@ const AnimeLibrary = () => {
             <div className="max-w-[1240px] py-48 mx-auto flex flex-col items-center">
 
                 <p className="uppercase text-sm tracking-widest"><span>Projects</span></p>
-                <h2 className="dark:text-h-dark-light">📑AnimeLibrary📑</h2>
+                <h2 className="dark:text-h-dark-light">AnimeLibrary</h2>
 
                 <div className="mt-8 grid w-[85%] lg:w-[50%] md:w-[75%]">
                     {/* Search */}
@@ -58,10 +58,12 @@ const AnimeLibrary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-                <Suspense fallback={<h2>Loading results...</h2>}>
-                    <AnimeItems animeInfo = {animeList} />
-                </Suspense>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <Suspense fallback={<h2>Loading results...</h2>}>
+                        <AnimeItems animeInfo = {animeList} />
+                    </Suspense>
+                    <a href="#" className="flex justify-center mt-6"><button type="button" 
+                    className="btn-secondary dark:shadow-shadow-dark">Load More</button></a>
                 </div>
             </div>
         </div>

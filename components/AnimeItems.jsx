@@ -8,7 +8,7 @@ const AnimeItems = ({ animeInfo }) => {
 
             return (
                 <div className="w-full flex flex-col items-center">
-                    <a className="flex rounded-sm w-[520px] h-full md:w-[85%] lg:w-[95%] bg-white dark:bg-bg-dark shadow 
+                    <a className="flex rounded-sm w-[85%] h-full md:w-[95%] lg:w-[95%] bg-white dark:bg-bg-dark shadow 
                     p-6 m-2 items-center hover:shadow-md" href={anime.url}>
                         <Image className="rounded-md mr-4" src={anime.images.webp.large_image_url} 
                         width='64' height='64' alt=""/>
