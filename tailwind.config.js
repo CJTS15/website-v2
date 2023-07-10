@@ -18,7 +18,7 @@ module.exports = {
         "bg-darker": "#121212",
         "h-dark-light": "#e3e3e3",
         "p-dark-light": "#FEFEFE",
-        "shadow-dark": "#333333"
+        "shadow-dark": "#222"
       },
     },
   },

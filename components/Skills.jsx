@@ -21,7 +21,8 @@ useEffect(() => {
         fadeUp.set({opacity: 0, y: 75}) 
         }
 },[isInView])
-  return (
+  
+return (
     <AnimatePresence>
     <div ref={ref} id="skills" className="w-full lg:h-full p-2 lg:py-28 py-16 px-8 dark:bg-bg-darker transition-colors">
         <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-center h-full">

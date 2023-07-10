@@ -1,5 +1,5 @@
 'use client'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link as LinkScroll } from 'react-scroll'
 import Image from 'next/image'
 
 import aboutImg from '../public/img/gdg-prof-pic.webp'
@@ -52,18 +52,18 @@ const About = () => {
                             I manage two websites: my WordPress blogsite and my personal website, similar to the one you are currently viewing.
                             I am consistently enhancing these sites by implementing fixes and introducing new features.</motion.p>
                         <div className="flex justify-center md:justify-start gap-6 my-8">
-                            <Link
+                            <LinkScroll
                                 to="skills"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
-                                duration={50}><motion.button animate={fadeRight} type="button" className="btn-primary dark:shadow-shadow-dark">What I Can Do</motion.button></Link>
-                            <Link
+                                duration={50}><motion.button animate={fadeRight} type="button" className="btn-primary dark:shadow-shadow-dark">What I Can Do</motion.button></LinkScroll>
+                            <LinkScroll
                                 to="works"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
-                                duration={50}><motion.button animate={fadeLeft} type="button" className="btn-secondary dark:shadow-shadow-dark">See My Works</motion.button></Link>
+                                duration={50}><motion.button animate={fadeLeft} type="button" className="btn-secondary dark:shadow-shadow-dark">See My Works</motion.button></LinkScroll>
                         </div>
                     </div>
                     <motion.div animate={fadeLeft} className="w-full h-auto m-auto my-4">

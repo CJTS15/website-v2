@@ -34,7 +34,7 @@ const Projects = () => {
     <div ref={ref} id="works" className="bg-slate-200 w-full lg:h-full p-2 lg:py-28 py-16 px-8 dark:bg-bg-dark transition-colors">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center items-center h-full">
         <motion.p animate={fadeDown} className="uppercase text-sm tracking-widest"><span>Projects</span></motion.p>
-        <motion.h1 animate={fadeUp} className="py-4 dark:text-h-dark-light">What I've Build.</motion.h1>
+        <motion.h1 animate={fadeUp} className="py-4 dark:text-h-dark-light">My Works.</motion.h1>
 
         <motion.div animate={fadeUp} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 py-10 text-center">
 

@@ -3,7 +3,10 @@ import './globals.css'
 import { ThemeProvider } from 'next-themes'
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation, AnimatePresence } from 'framer-motion'
+
 import { useRouter } from 'next/navigation'
+
+// eslint-disable-next-line import/no-unresolved
 import { Analytics } from '@vercel/analytics/react'
 
 export default function RootLayout({ children }) {
@@ -16,21 +19,21 @@ export default function RootLayout({ children }) {
   useEffect(() => {
       fade.set({ opacity: 0})
       fade.start({ opacity: 1}) 
-  }, [isInView])
+  }, [isInView]);
+
 
   return (
-
-    <AnimatePresence>
-      <html lang="en" ref={ref}>
-        <motion.body suppressHydrationWarning
-          key={router} 
-          animate={fade}>
-          <ThemeProvider enableSystem={true} attribute="class">
-            {children}
-            <Analytics />
-          </ThemeProvider>
-        </motion.body>
-      </html>
-    </AnimatePresence>
+      <AnimatePresence>
+        <html lang="en" ref={ref}>
+          <motion.body suppressHydrationWarning
+            key={router} 
+            animate={fade}>
+            <ThemeProvider enableSystem={true} attribute="class">
+              {children}
+              <Analytics />
+            </ThemeProvider>
+          </motion.body>
+        </html>
+      </AnimatePresence>
   )
 }

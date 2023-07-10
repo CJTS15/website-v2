@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const ProjectItems = ({title, backgroundImg, projectStack, projectUrl}) => {
+  
   return (
     <div className="relative flex items-center justify-center h-auto w-full 
     shadow-md shadow-gray-300 dark:shadow-shadow-dark rounded-md 

@@ -43,12 +43,12 @@ const LinkTree = () => {
                         <div className="">
                             <div className="text-center px-12">
                                 <h2 className="text-3xl font-bold">CJ Sabijon</h2>
-                                <a href="https://cjts15.github.io/" className="text-gray-400 mt-2 hover:text-blue-500" >@cj_wolfy15</a>
+                                <a href="/" className="text-gray-400 mt-2 hover:text-blue-500" >@cj_wolfy15</a>
                                 <p className="mt-2 text-gray-600 text-sm">♒ | Tech | Gamer | Developer | 💻 Support | 👨🏻‍💻 GDG | 👨🏻‍💻 DEVCON</p>
                             </div>              
                         </div>
                         <div className="flex flex-col space-y-1 mt-4 items-center max-w-full ">
-                            <a href="https://cjts15.github.io/">
+                            <a href="/">
                                 <button type="button" className="btn-primary w-[240px]">Website</button></a>
                             <a href="https://thetechwolfcave.wordpress.com/">
                                 <button type="button" className="btn-primary w-[240px]">Blog</button></a>
