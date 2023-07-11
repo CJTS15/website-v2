@@ -19,10 +19,8 @@ const AnimeLibrary = () => {
         FetchAnime()
     }, [search])
 
-    console.log(animeList)
-
     return (
-        <div className="w-full h-fit lg:h-full p-2 px-2 dark:bg-bg-darker transition-colors">
+        <div className="w-full h-fit md:h-screen lg:h-screen p-2 px-2 dark:bg-bg-darker transition-colors">
             <div className="max-w-[1240px] py-32 mx-auto flex flex-col items-center">
 
                 <p className="uppercase text-sm tracking-widest"><span>Projects</span></p>
@@ -58,9 +56,9 @@ const AnimeLibrary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="h-screen mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center">
-                    <Suspense fallback={<h2>Loading results...</h2>}>
-                        <AnimeItems animeInfo = {animeList} />
+                <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center">
+                    <Suspense>
+                            <AnimeItems animeInfo = {animeList} /> 
                     </Suspense>
                     {/* <a href="#" className="flex justify-center mt-6"><button type="button" 
                     className="btn-secondary dark:shadow-shadow-dark">Load More</button></a> */}
