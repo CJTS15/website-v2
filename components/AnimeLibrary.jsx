@@ -26,20 +26,19 @@ const AnimeLibrary = () => {
                 <p className="uppercase text-sm tracking-widest"><span>Projects</span></p>
                 <h2 className="dark:text-h-dark-light">AnimeLibrary</h2>
 
-                <div className="mt-8 grid w-[85%] lg:w-[50%] md:w-[75%]">
+                <div className="my-8 grid w-[85%] lg:w-[50%] md:w-[75%]">
                     {/* Search */}
                     <div className="py-6">
                         <div className="relative flex w-full flex-wrap items-stretch">
                             <input
                                 type="search"
                                 className="relative m-0 -mr-0.5 block w-[1px] min-w-0 
-                            flex-auto rounded-l border border-solid border-neutral-300 
+                            flex-auto rounded-l border border-solid
                             bg-transparent bg-clip-padding px-3 py-[0.25rem] 
-                            text-base font-normal leading-[1.6] text-zinc-900 
+                            text-base font-normal leading-[1.6] text-gray-900 bg-white
                             outline-none transition duration-200 ease-in-out focus:z-[3] 
-                            focus:border-primary focus:text-neutral-900 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] 
-                            focus:outline-none dark:border-neutral-600 dark:text-p-dark-light 
-                            dark:placeholder:text-p-dark-light dark:focus:border-primary"
+                            border-gray-300 dark:bg-bg-dark dark:text-p-dark-light
+                            focus:border-blue-500"
                                 placeholder="Search Anime..."
                                 aria-label="Search Anime..."
                                 onChange={(e) => SetSearch(e.target.value)} />
@@ -56,7 +55,7 @@ const AnimeLibrary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center">
+                <div className="w-full h-screen md:h-fit lg:h-fit grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center">
                     <Suspense>
                             <AnimeItems animeInfo = {animeList} /> 
                     </Suspense>

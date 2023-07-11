@@ -29,14 +29,14 @@ const Beshifier = () => {
 
                 <div className="mt-8 grid w-[85%] lg:w-[50%] md:w-[75%]">
                     <div className="flex flex-col px-3 py-2 rounded-l">
-                        <input type="text" value={text} onChange={handleChange} className="w-full resize-none block mx-4 p-2.5 text-sm text-gray-900 bg-white rounded-lg border border-gray-300
-                    dark:bg-bg-dark dark:text-p-dark-light" placeholder="Your Text Here..."></input>
+                        <input type="text" value={text} onChange={handleChange} className="w-full resize-none block mx-4 p-2.5 text-sm 
+                        text-gray-900 bg-white rounded-l border-solid dark:bg-bg-dark dark:text-p-dark-light focus:z-[3] focus:border-blue-500" placeholder="Your Text Here..."></input>
                     </div>
                     <div className="flex flex-col justify-between px-3 py-2 pb-12 rounded-l">
                         <div className="flex justify-between items-center">
-                            <p className="w-full h-20 resize-none mx-4 p-2.5 text-sm text-gray-900 bg-white rounded-lg border border-gray-300
-                    dark:bg-bg-dark dark:text-white uppercase">{text.replace(/\s/g, "🤸")}</p>
-                            <button type="button" className="p-2 text-blue-600 rounded-full cursor-pointer hover:bg-slate-200"
+                            <p className="w-full h-20 resize-none mx-4 p-2.5 text-sm text-gray-900 bg-white rounded-l border-solid
+                            bg-transparent dark:bg-bg-dark dark:text-white uppercase">{text.replace(/\s/g, "🤸")}</p>
+                            <button type="button" className="p-2 text-blue-500 rounded-full cursor-pointer hover:bg-slate-200"
                                 onClick={copyToClipboard}>
                                 <FaCopy size={20} />
                             </button>
