@@ -55,7 +55,7 @@ const AnimeLibrary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-screen md:h-fit lg:h-fit grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center">
+                <div className="w-full h-screen md:h-fit lg:h-fit mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center">
                     <Suspense>
                             <AnimeItems animeInfo = {animeList} /> 
                     </Suspense>
