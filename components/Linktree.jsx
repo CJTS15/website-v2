@@ -6,14 +6,14 @@ import aboutbgImg from '../public/img/shattered-island.webp'
 const LinkTree = () => {
 
     return (
-        <div className="w-full h-fit lg:h-full p-2 px-8 dark:bg-bg-darker transition-colors">
-        <div className="max-w-[1240px] py-48 mx-auto flex flex-col items-center">
+        <div className="w-full h-fit lg:h-full p-2 px-2 dark:bg-bg-darker transition-colors">
+        <div className="max-w-[1240px] py-32 mx-auto flex flex-col items-center">
 
                 <p className="uppercase text-sm tracking-widest"><span>Projects</span></p>
                 <h2 className="dark:text-h-dark-light">LinkTree</h2>
 
                 <div className="mt-8 grid w-[85%] lg:w-[35%] md:w-[55%]">
-                    <div className="mr-auto ml-auto bg-white shadow-lg transform duration-200 easy-in-out pb-8 rounded-lg">
+                    <div className="max-w-full mr-auto ml-auto bg-white shadow-lg transform duration-200 easy-in-out pb-8 rounded-lg">
                         <div className="h-32 overflow-hidden m-0">
                             <Image src={aboutbgImg} width='864' height='324' alt="" />
                         </div>
@@ -27,15 +27,15 @@ const LinkTree = () => {
                                 <p className="mt-2 text-gray-600 text-sm">♒ | Tech | Gamer | Developer | 💻 Support | 👨🏻‍💻 GDG | 👨🏻‍💻 DEVCON</p>
                             </div>
                         </div>
-                        <div className="flex flex-col space-y-1 mt-4 items-center max-w-full ">
+                        <div className="flex flex-col space-y-1 mt-4 items-center">
                             <a href="/">
-                                <button type="button" className="btn-primary w-[240px]">Website</button></a>
+                                <button type="button" className="btn-primary w-[420px] lg:w-[320px] md:w-[300px]">Website</button></a>
                             <a href="https://thetechwolfcave.wordpress.com/">
-                                <button type="button" className="btn-primary w-[240px]">Blog</button></a>
+                                <button type="button" className="btn-primary w-[420px] lg:w-[320px] md:w-[300px]">Blog</button></a>
                             <a href="https://www.linkedin.com/in/cjsabijon/">
-                                <button type="button" className="btn-primary w-[240px]">LinkedIn</button></a>
+                                <button type="button" className="btn-primary w-[420px] lg:w-[320px] md:w-[300px]">LinkedIn</button></a>
                             <a href="https://youtube.com/channel/UCO0VebhOX9eKVVYa1_PXnFg?sub_confirmation=1">
-                                <button type="button" className="btn-primary w-[240px]">Youtube</button></a>
+                                <button type="button" className="btn-primary w-[420px] lg:w-[320px] md:w-[300px]">Youtube</button></a>
                         </div>
                     </div>
                 </div>

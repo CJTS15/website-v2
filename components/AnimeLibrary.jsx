@@ -1,8 +1,8 @@
-import React, { useState, useEffect, Suspense } from 'react'
+import React, { useState, useEffect, lazy, Suspense } from 'react'
 
 import { BiSearch } from 'react-icons/bi'
 
-import AnimeItems from './AnimeItems'
+const AnimeItems = lazy(() => import ('./AnimeItems'))
 
 const AnimeLibrary = () => {
 
@@ -10,9 +10,9 @@ const AnimeLibrary = () => {
     const [search, SetSearch] = useState("")
 
     const FetchAnime = async () => {
-        const temp = await fetch("https://api.jikan.moe/v4/anime?q=" + search + "&limit=9")
-        const resData = await temp.json();
-        SetAnimeList(resData.data)
+        const temp = await fetch("https://kitsu.io/api/edge/anime?filter[text]=" + search + "&page[limit]=5")
+        const res = await temp.json();
+        SetAnimeList(res.data)
     }
 
     useEffect(() => {
@@ -22,8 +22,8 @@ const AnimeLibrary = () => {
     console.log(animeList)
 
     return (
-        <div className="w-full h-fit lg:h-full p-2 px-8 dark:bg-bg-darker transition-colors">
-            <div className="max-w-[1240px] py-48 mx-auto flex flex-col items-center">
+        <div className="w-full h-fit lg:h-full p-2 px-2 dark:bg-bg-darker transition-colors">
+            <div className="max-w-[1240px] py-32 mx-auto flex flex-col items-center">
 
                 <p className="uppercase text-sm tracking-widest"><span>Projects</span></p>
                 <h2 className="dark:text-h-dark-light">AnimeLibrary</h2>
@@ -58,7 +58,7 @@ const AnimeLibrary = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center">
+                <div className="h-screen mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 content-center">
                     <Suspense fallback={<h2>Loading results...</h2>}>
                         <AnimeItems animeInfo = {animeList} />
                     </Suspense>

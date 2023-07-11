@@ -21,8 +21,8 @@ const Beshifier = () => {
 
 
     return (
-        <div className="w-full h-screen p-2 px-8 dark:bg-bg-darker transition-colors">
-        <div className="max-w-[1240px] py-48 mx-auto flex flex-col items-center">
+        <div className="w-full h-screen p-2 px-2 dark:bg-bg-darker transition-colors">
+        <div className="max-w-[1240px] py-32 mx-auto flex flex-col items-center">
 
                 <p className="uppercase text-sm tracking-widest"><span>Projects</span></p>
                 <h2 className="dark:text-h-dark-light">🤸Beshifier🤸</h2>

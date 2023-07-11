@@ -8,23 +8,23 @@ const AnimeItems = ({ animeInfo }) => {
 
             return (
                 <div className="w-full flex flex-col items-center">
-                    <a className="flex rounded-sm w-[85%] h-full md:w-[95%] lg:w-[95%] bg-white dark:bg-bg-dark shadow 
-                    p-6 m-2 items-center hover:shadow-md" href={anime.url}>
-                        <Image className="rounded-md mr-4" src={anime.images.webp.large_image_url} 
+                    <div className="flex rounded-sm w-[85%] h-full md:w-[95%] lg:w-[95%] bg-white dark:bg-bg-dark shadow 
+                    p-6 m-2 items-center hover:shadow-md">
+                        <Image className="rounded-md mr-4" src={anime.attributes.posterImage.large} 
                         width='64' height='64' alt=""/>
                         <div> 
                             <p className="text-zinc-900 font-bold dark:text-p-dark-light"> 
-                            {anime.title}</p>
+                            {anime.attributes.canonicalTitle}</p>
                             <p className="text-sm font-semibold text-gray-800 dark:text-p-dark-light"> 
-                            Number of Episodes - {anime.episodes}</p>
+                            Number of Episodes - {anime.attributes.episodeCount}</p>
                             <p className="text-sm font-semibold text-gray-800 dark:text-p-dark-light"> 
-                            Duration - {anime.duration}</p>
+                            Duration - {anime.attributes.episodeLength}</p>
                             <p className="text-sm font-semibold text-gray-800 dark:text-p-dark-light"> 
-                            Ranking - {anime.rank}</p>
+                            Status - {anime.attributes.status}</p>
                             <p className="text-sm text-gray-800 font-light line-clamp-3 dark:text-p-dark-light"> 
-                            {anime.synopsis}</p>
+                            {anime.attributes.synopsis}</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
             )
         })
