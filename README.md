@@ -10,4 +10,4 @@ This is my homepage - <a href="https://cjsabijon.vercel.app/" target="_blank">He
 2. Beshifier - <a href="https://cjsabijon.vercel.app/beshifier" target="_blank">Beshifier</a>
 - A simple web app that replaces a space with an emoji (🤸) like this. This idea was inspired by other developers and a meme on Facebook originated it.
 3. AnimeLibrary - <a href="https://cjsabijon.vercel.app/animelibrary" target="_blank">AnimeLibrary</a>
-- A simple anime library web app created with NextJS13 and TailwindCSS. The anime API that is used in this project is from <a href="https://kitsu.docs.apiary.io/#" target="_blank">Kitsu API</a>
+- A simple anime library web app created with NextJS13 and TailwindCSS. The anime API that is used in this project is from <a href="https://kitsu.docs.apiary.io/#" target="_blank">Kitsu API</a>.
