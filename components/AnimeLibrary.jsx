@@ -21,7 +21,7 @@ const AnimeLibrary = () => {
 
     return (
         <div className="w-full h-fit md:h-screen lg:h-screen p-2 px-2 dark:bg-bg-darker transition-colors">
-            <div className="max-w-[1240px] py-32 mx-auto flex flex-col items-center">
+            <div className="max-w-[1240px] py-32 mx-auto flex flex-col grow items-center">
 
                 <p className="uppercase text-sm tracking-widest"><span>Projects</span></p>
                 <h2 className="dark:text-h-dark-light">AnimeLibrary</h2>
