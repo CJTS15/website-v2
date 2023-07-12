@@ -2,8 +2,12 @@
 const nextConfig = {
     images: {
         remotePatterns: [
-            {
-                hostname: "media.kitsu.io", 
+            {   
+                protocol: "https",
+                hostname: "media.kitsu.io"
+            },
+            {   
+                protocol: "http",
                 hostname: "openweathermap.org"
             }
         ]

@@ -1,11 +1,12 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react'
+import axios from 'axios'
 
 const AnimeItems = lazy(() => import ('./AnimeItems'))
 
 const AnimeLibrary = () => {
 
     const [animeList, SetAnimeList] = useState([])
-    const [search, SetSearch] = useState("")
+    const [search, setSearch] = useState("")
 
     const url = "https://kitsu.io/api/edge/anime?filter[text]=" + search + "&page[limit]=5"
 
@@ -19,6 +20,7 @@ const AnimeLibrary = () => {
     useEffect(() => {
         FetchAnime()
     }, [search])
+
 
     return (
         <div className="w-full h-fit md:h-screen lg:h-screen p-2 px-2 dark:bg-bg-darker transition-colors">
@@ -42,7 +44,7 @@ const AnimeLibrary = () => {
                             focus:border-blue-500"
                                 placeholder="Search Anime..."
                                 aria-label="Search Anime..."
-                                onChange={(e) => SetSearch(e.target.value)} />
+                                onChange={(e) => setSearch(e.target.value)} />
                         </div>
                     </div>
                 </div>
