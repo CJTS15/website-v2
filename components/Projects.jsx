@@ -67,14 +67,14 @@ const Projects = () => {
           />
 
           <ProjectItems
-            title="FDMG"
+            title="Infinity Hub"
             backgroundImg={ihImg}
             projectStack="WordPress CMS"
             projectUrl="https://infinityhub.com/"
           />
 
           <ProjectItems
-            title="FDMG"
+            title="Nasya PH"
             backgroundImg={nasyaImg}
             projectStack="WordPress CMS"
             projectUrl="https://nasya.ph/"

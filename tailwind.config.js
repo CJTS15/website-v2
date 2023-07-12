@@ -19,11 +19,16 @@ module.exports = {
         "bg-darker": "#121212",
         "h-dark-light": "#e3e3e3",
         "p-dark-light": "#FEFEFE",
-        "shadow-dark": "#222"
+        "shadow-dark": "#222",
+      },
+      backdropFilter : {
+        'none': 'none',
+        'blur': 'blur(20px)',
       },
     },
   },
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    require('tailwindcss-filters'),
   ],
 }
