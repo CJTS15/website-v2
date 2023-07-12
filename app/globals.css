@@ -74,7 +74,7 @@
   }
 
   .bg-gradient {
-    @apply bg-gradient-to-l from-[#136a8a] to-[#267871]
+    @apply bg-gradient-to-r from-[#f6cfbe] to-[#b9dcf2]
   }
 
 }
