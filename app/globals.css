@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth
   }
 
   body {
@@ -74,7 +74,7 @@
   }
 
   .bg-gradient {
-    @apply bg-gradient-to-r from-[#f6cfbe] to-[#b9dcf2]
+    @apply bg-gradient-to-l from-[#f6cfbe] to-[#b9dcf2]
   }
 
 }
