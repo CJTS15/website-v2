@@ -11,22 +11,6 @@
     @apply bg-[#ecf0f3] text-zinc-900 tracking-wide
   }
 
-  .bg-dark {
-    @apply bg-[#27374D]
-  }
-
-  .h-dark-light {
-    @apply bg-[#DDE6ED]
-  }
-
-  .p-dark-light {
-    @apply bg-[#9DB2BF]
-  }
-
-  .logo {
-    @apply text-4xl text-zinc-900
-  }
-
   p {
     @apply text-gray-800
   }
@@ -40,11 +24,11 @@
   }
   
   h1 {
-    @apply text-6xl sm:text-5xl lg:text-7xl
+    @apply text-5xl sm:text-4xl md:text-6xl lg:text-7xl
   }
 
   h2 {
-    @apply text-5xl sm:text-4xl lg:text-6xl
+    @apply text-4xl sm:text-3xl md:text-5xl lg:text-6xl
   }
 
   li {
@@ -88,5 +72,9 @@
   .nav-item {
     @apply hover:border-b-2 border-blue-500 py-2;
   }
-  
+
+  .bg-gradient {
+    @apply bg-gradient-to-l from-[#136a8a] to-[#267871]
+  }
+
 }

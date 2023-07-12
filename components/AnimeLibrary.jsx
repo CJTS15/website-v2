@@ -1,7 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react'
 
-import { BiSearch } from 'react-icons/bi'
-
 const AnimeItems = lazy(() => import ('./AnimeItems'))
 
 const AnimeLibrary = () => {
@@ -9,10 +7,13 @@ const AnimeLibrary = () => {
     const [animeList, SetAnimeList] = useState([])
     const [search, SetSearch] = useState("")
 
+    const url = "https://kitsu.io/api/edge/anime?filter[text]=" + search + "&page[limit]=5"
+
     const FetchAnime = async () => {
-        const temp = await fetch("https://kitsu.io/api/edge/anime?filter[text]=" + search + "&page[limit]=5")
-        const res = await temp.json();
+        const temp = await fetch(url)
+        const res = await temp.json()
         SetAnimeList(res.data)
+        setSearch("")
     }
 
     useEffect(() => {
@@ -33,7 +34,7 @@ const AnimeLibrary = () => {
                             <input
                                 type="search"
                                 className="relative m-0 -mr-0.5 block w-[1px] min-w-0 
-                            flex-auto rounded-l border border-solid
+                            flex-auto rounded-full border border-solid
                             bg-transparent bg-clip-padding px-3 py-[0.25rem] 
                             text-base font-normal leading-[1.6] text-gray-900 bg-white
                             outline-none transition duration-200 ease-in-out focus:z-[3] 
@@ -42,16 +43,6 @@ const AnimeLibrary = () => {
                                 placeholder="Search Anime..."
                                 aria-label="Search Anime..."
                                 onChange={(e) => SetSearch(e.target.value)} />
-                            <button
-                                className="relative z-[2] flex items-center rounded-r 
-                            bg-blue-500 px-6 py-2.5 text-xs font-medium uppercase 
-                            leading-tight text-white shadow-md transition 
-                            duration-150 ease-in-out hover:bg-primary-700 
-                            hover:shadow-lg focus:bg-primary-700 focus:shadow-lg 
-                            focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
-                                type="button">
-                                <BiSearch size={20} />
-                            </button>
                         </div>
                     </div>
                 </div>

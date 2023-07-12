@@ -8,7 +8,7 @@ export default function Page() {
     <div>
       <Navbar />
       <Beshifier />
-      <Footer />     
+      <Footer />
     </div>
   )
 }

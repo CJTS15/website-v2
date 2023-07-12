@@ -4,7 +4,7 @@ import React from 'react'
 const AnimeItems = ({ animeInfo }) => {
 
     return (
-        animeInfo?.map((anime, index) => {
+        animeInfo.map((anime, index) => {
 
             return (
                 <div className="w-full flex flex-col items-center">

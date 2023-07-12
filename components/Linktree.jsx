@@ -12,7 +12,7 @@ const LinkTree = () => {
                 <p className="uppercase text-sm tracking-widest"><span>Projects</span></p>
                 <h2 className="dark:text-h-dark-light">LinkTree</h2>
 
-                <div className="mt-8 grid w-[85%] lg:w-[35%] md:w-[55%]">
+                <div className="mt-8 grid w-[95%] lg:w-[35%] md:w-[45%]">
                     <div className="max-w-full mr-auto ml-auto bg-white shadow-lg transform duration-200 easy-in-out pb-8 rounded-lg">
                         <div className="h-32 overflow-hidden m-0">
                             <Image src={aboutbgImg} width='864' height='324' alt="" />
@@ -29,13 +29,13 @@ const LinkTree = () => {
                         </div>
                         <div className="flex flex-col space-y-1 mt-4 items-center">
                             <a href="/">
-                                <button type="button" className="btn-primary w-[420px] lg:w-[320px] md:w-[300px]">Website</button></a>
+                                <button type="button" className="btn-primary w-[280px] lg:w-[320px] md:w-[300px]">Website</button></a>
                             <a href="https://thetechwolfcave.wordpress.com/">
-                                <button type="button" className="btn-primary w-[420px] lg:w-[320px] md:w-[300px]">Blog</button></a>
+                                <button type="button" className="btn-primary w-[280px] lg:w-[320px] md:w-[300px]">Blog</button></a>
                             <a href="https://www.linkedin.com/in/cjsabijon/">
-                                <button type="button" className="btn-primary w-[420px] lg:w-[320px] md:w-[300px]">LinkedIn</button></a>
+                                <button type="button" className="btn-primary w-[280px] lg:w-[320px] md:w-[300px]">LinkedIn</button></a>
                             <a href="https://youtube.com/channel/UCO0VebhOX9eKVVYa1_PXnFg?sub_confirmation=1">
-                                <button type="button" className="btn-primary w-[420px] lg:w-[320px] md:w-[300px]">Youtube</button></a>
+                                <button type="button" className="btn-primary w-[280px] lg:w-[320px] md:w-[300px]">Youtube</button></a>
                         </div>
                     </div>
                 </div>
