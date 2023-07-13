@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply bg-[#ecf0f3] text-zinc-900 tracking-wide
+    @apply bg-[#ecf0f3] text-zinc-900 tracking-wide overflow-x-hidden overscroll-y-auto select-none
   }
 
   p {

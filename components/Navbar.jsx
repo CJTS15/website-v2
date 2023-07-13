@@ -27,11 +27,13 @@ const navbar = () => {
 
   return (
     <div className={shadow 
-    ? 'fixed w-full h-20 shadow-md z-[100] px-4 md:px-8 bg-slate-50 dark:bg-bg-dark transition-colors' 
-    : 'fixed w-full h-20 z-[100] px-4 md:px-8 bg-slate-50 dark:bg-bg-dark transition-colors'}>
+    ? 'fixed w-full h-20 shadow-md z-[100] px-8 md:px-8 bg-slate-50 dark:bg-bg-dark transition-colors' 
+    : 'fixed w-full h-20 z-[100] px-8 md:px-8 bg-slate-50 dark:bg-bg-dark transition-colors'}>
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-            <a href="/">
-                <h2 className="logo flex border-l-4 border-blue-500 px-2 dark:text-h-dark-light">CJ👋</h2>
+            <a href="/" className="flex items-center">
+                <span className="text-4xl font-extrabold">&lt;</span>
+                <h2 className="text-4xl logo dark:text-h-dark-light">CJ</h2>
+                <span className="text-4xl font-extrabold">/&gt;</span>
             </a>
                 <div>
                     <ul className="hidden md:flex items-center nav-menu active ">
@@ -75,8 +77,10 @@ const navbar = () => {
                     ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-bg-dark p-8 ease-in duration-300' 
                     : 'fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-bg-dark p8 ease-in duration-300'}>  
                         <div className="flex w-full items-center justify-between">
-                            <a href="/">
-                                <h2 className="logo flex border-l-4 border-blue-500 px-2 dark:text-h-dark-light">CJ👋</h2>
+                            <a href="/" className="flex items-center">
+                                <span className="text-4xl font-extrabold">&lt;</span>
+                                <h2 className="text-4xl logo dark:text-h-dark-light">CJ</h2>
+                                <span className="text-4xl font-extrabold">/&gt;</span>
                             </a>
                             <div onClick={handleNav} className="rounded-full shadow-md shadow-gray-200 dark:shadow-shadow-dark cursor-pointer p-3 dark:text-p-dark-light">
                                 <AiOutlineClose size={15} />

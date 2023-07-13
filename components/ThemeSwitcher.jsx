@@ -11,10 +11,10 @@ const ThemeSwitcher = () => {
             onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
             {resolvedTheme === 'light'
                 ? (
-                    <FaCloudSun className="h-5 w-5 text-[#ffc83d]" />
+                    <FaCloudSun size={25} className="h-5 w-5 text-[#ffc83d]" />
 
                 ) : (
-                    <FaCloudMoon className="h-5 w-5 text-blue-500" />
+                    <FaCloudMoon size={25} className="h-5 w-5 text-blue-500" />
                 )
             }
         </button>

@@ -13,22 +13,16 @@ const Hero = () => {
     const fadeDown = useAnimation();
     const fadeUp = useAnimation();
     const fadeUp1 = useAnimation();
-    const fadeRight = useAnimation();
-    const fadeLeft = useAnimation();
 
     useEffect(() => {
         if (isInView) {
             fadeDown.start({ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.25 } })
             fadeUp.start({ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.25 } })
             fadeUp1.start({ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.25 } })
-            fadeRight.start({ opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.25 } })
-            fadeLeft.start({ opacity: 1, x: 0, transition: { duration: 0.5, delay: 0.25 } })
         } else {
             fadeDown.set({ opacity: 0, y: -55 })
             fadeUp.set({ opacity: 0, y: 75 })
             fadeUp1.set({ opacity: 0, y: 55 })
-            fadeRight.set({ opacity: 0, x: -55 })
-            fadeLeft.set({ opacity: 0, x: 55 })
         }
     }, [isInView])
 
@@ -36,7 +30,7 @@ const Hero = () => {
         <AnimatePresence>
             {/* Hero */}
             <div ref={ref} id="home" className="w-full h-screen text-center dark:bg-bg-darker transition-colors">
-                <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+                <div className="max-w-[1240px] w-full h-full mx-auto p-2 pt-24 flex justify-center items-center">
                     <div>
                         <motion.p animate={fadeDown} className="uppercase text-sm tracking-widest dark:text-p-dark-light">Your Friendly Neighborhood Tech Support</motion.p>
                         <motion.h1 animate={fadeUp} className="py-4 dark:text-h-dark-light">Hi, I'm <span>CJ</span>👋</motion.h1>
@@ -65,9 +59,9 @@ const Hero = () => {
                                 smooth={true}
                                 offset={-70}
                                 duration={50}
-                            ><motion.button animate={fadeRight} type="button" className="btn-primary dark:shadow-shadow-dark">Know About Me</motion.button></LinkScroll>
+                            ><motion.button animate={fadeUp} type="button" className="btn-primary dark:shadow-shadow-dark">Know About Me</motion.button></LinkScroll>
                             <a href="https://thetechwolfcave.wordpress.com/">
-                                <motion.button animate={fadeLeft} type="button" className="btn-secondary dark:shadow-shadow-dark">Read My Blogs</motion.button></a>
+                                <motion.button animate={fadeUp} type="button" className="btn-secondary dark:shadow-shadow-dark">Read My Blogs</motion.button></a>
                         </div>
                     </div>
                 </div>
