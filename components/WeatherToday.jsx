@@ -3,7 +3,6 @@ import axios from "axios";
 import Image from "next/image";
 
 import { WiThermometer, WiHumidity, WiWindy } from "react-icons/wi";
-import { BiSearch } from "react-icons/bi";
 
 import { PiCoffeeLight } from "react-icons/pi";
 
@@ -17,10 +16,10 @@ const WeatherToday = () => {
   const fetchWeather = async () => {
     try {
       axios.get(url).then((response) => {
-        setData(response.data);
+        setData(response.data)
       });
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
   };
 
