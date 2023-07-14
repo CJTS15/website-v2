@@ -1,3 +1,4 @@
+'use client'
 import { FaCopy } from 'react-icons/fa'
 
 import React, { useState } from 'react'

@@ -1,6 +1,6 @@
 'use client'
 import { Link as LinkScroll } from 'react-scroll'
-import { FaGlobe, FaLinkedin, FaWordpress, FaGithub, FaWordpressSimple, FaHeadset, FaSwatchbook, FaPalette } from 'react-icons/fa'
+import { FaGlobe, FaLinkedin, FaWordpress, FaGithub} from 'react-icons/fa'
 
 import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimation, AnimatePresence } from 'framer-motion'
