@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar'
-import AnimeLibrary from '@/components/AnimeLibrary'
+import AnimeLibrary from '@/components/animelibrary/AnimeLibrary'
 import Footer from '@/components/Footer'
 
 export const metadata = {
